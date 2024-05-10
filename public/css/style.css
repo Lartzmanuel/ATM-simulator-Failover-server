@@ -1,0 +1,394 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('../images/Background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+}
+
+.poppins-extralight {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+  }
+  
+  .poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .poppins-semibold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+
+  .poppins-extrabold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+  }
+  
+  .poppins-black {
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 18px;
+  }
+  
+
+.auth-container {
+    display: flex;
+    width: 800px;
+}
+
+.pin-wrapper {
+    padding: 40px 40px;
+    background-image: linear-gradient(to top, rgb(107, 107, 107), white);
+    border-radius: 0 10px 10px 0;
+}
+
+.pin-inner-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    text-align: center;
+}
+
+.pin-container{
+    display: flex;
+    gap: 2rem;
+}
+
+.greeting {
+    text-align: center;
+}
+
+.pin-box {
+    width: 90px;
+    height: 90px;
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+    border: none;
+    outline: none;
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+}
+
+.pin-button {
+    width: 30%;
+    border-radius: 20px;
+    transition: box-shadow ease 0.3s;
+}
+
+.pin-button:hover {
+    box-shadow: 0 0 8px rgba(0,0,0,0.3);
+}
+
+button {
+    border-radius: 10px;
+    padding: 10px 25px;
+    border: none;   
+    background-image: linear-gradient(to right, #146fe6, rgb(212, 25, 203), rgb(179, 2, 179));
+    color: white;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.side-container {
+    background-color: rgb(132, 171, 255);
+    color: white;
+    padding: 0 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px 0 0 10px;
+}
+
+.wrapper {
+    width: 700px;
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.input {
+    width: 100%;
+    border-radius: 8px;
+    padding: 10px;
+    margin: 2px 0 10px 0;
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+.label {
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+p.label {
+    margin: 8px 0;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex-items {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.btn {
+    width: 100%;
+    margin-top: 20px;
+    padding: 15px 0;
+    transition: box-shadow ease 0.3s;
+}
+
+.btn:hover {
+    box-shadow: 4px 6px 8px rgba(0,0,0,0.3);
+}
+
+.no-account {
+    text-align: center;
+    margin-top: 15px;
+    text-transform: lowercase;
+}
+
+.signup {
+    color: #146fe6;
+    text-decoration: none;
+    text-transform: lowercase;
+}
+
+.welcome-wrapper {
+    width: 800px;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    background-image: linear-gradient(to bottom, white, rgb(241, 241, 241), rgb(231, 231, 231));
+}
+
+.container {
+    text-transform: uppercase;
+}
+
+.container form {
+    width: 700px;
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    padding-top: 160px
+}
+
+.container form .inputBox {
+    margin-top: 20px;
+}
+
+.container input {
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container form .inputBox span {
+    display: block;
+    padding-bottom: 5px;
+}
+
+.container form .inputBox input,
+.container form .inputBox select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.container form .flexbox {
+    display: flex;
+    gap: 15px;
+}
+
+.container form .flexbox .inputBox {
+    flex: 1 1 150px;
+}
+
+.user-details {
+    padding: 20px 15px;
+    display: flex;
+    justify-content: flex-end;
+    border-bottom: 1px solid rgb(199, 199, 199);
+}
+
+.process-wrapper {
+    background-image: linear-gradient(to bottom, white, rgb(241, 241, 241), rgb(231, 231, 231));
+    /* background-image: linear-gradient(to bottom, white, rgb(224, 224, 224), rgb(223, 223, 223)); */
+    padding: 15px 25px;
+}
+
+.logout {
+    padding: 15px 25px;
+}
+
+.instruction {
+    padding: 30px 0;
+}
+
+.options {
+    display: flex;
+    justify-content: space-between;
+}
+
+.options-set-1, .options-set-2  {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.option-container {
+    transition: transform 0.3s;
+    padding: 15px;
+}
+
+.option-container:hover {
+    transform: scale(1.1);
+}
+
+.options-set-1 > .option-container{
+    background-image: linear-gradient(to right, white, rgb(241, 241, 241), rgb(231, 231, 231));
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.options-set-2 > .option-container{
+    background-image: linear-gradient(to left, white, rgb(241, 241, 241), rgb(231, 231, 231));
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.link {
+    color: black;
+    text-decoration: none;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.container .card-container {
+    margin-bottom: -150px;
+    position: relative;
+    height: 250px;
+    width: 400px;
+}
+
+.container .card-container .front {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0; left: 35%;
+    background-image: linear-gradient(to right, #146fe6, rgb(212, 25, 203), rgb(179, 2, 179));
+    border-radius: 5px;
+    backface-visibility: hidden;
+    box-shadow: 0 15px 25px rgba(0,0,0,0.2);
+    padding: 20px;
+    transform: perspective(1000px) rotateY(0deg);
+    transition: transform 0.4s ease-out;
+}
+
+.container .card-container .front .image {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+
+.container .card-container .front .card-number-box{
+    padding: 30px 0;
+    font-size: 22px;
+    color: #fff;
+}
+
+.container .card-container .front .flexbox {
+    display: flex;
+}
+
+.container .card-container .front .flexbox .box:nth-child(1) {
+    margin-right: auto;
+}
+
+.container .card-container .front .flexbox .box {
+    font-size: 15px;
+    color: #fff;
+}
+
+.container .card-container .back {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0; left: 35%;
+    background-image: linear-gradient(to right, #146fe6, rgb(212, 25, 203), rgb(179, 2, 179));
+    border-radius: 5px;
+    padding: 20px 0;
+    text-align: right;
+    backface-visibility: hidden;
+    box-shadow: 0 15px 25px rgba(0,0,0,0.2);
+    transform: perspective(1000px) rotateY(180deg);
+    transition: transform 0.4s ease-out;
+}
+
+.container .card-container .back .stripe {
+    background: #000;
+    width: 100%;
+    margin: 10px 0;
+    height: 50px;
+}
+
+.container .card-container .back .box {
+    padding: 0 20px;
+}
+
+.container .card-container .back .box span {
+    color: #fff;
+    font-size: 15px;
+}
+
+.container .card-container .back .box .cvv-box{
+    height: 50px;
+    padding: 10px;
+    margin-top: 5px;
+    color: #333;
+    background: #fff;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.container .card-container .back .box img {
+    margin-top: 30px;
+    height: 30px;
+}
