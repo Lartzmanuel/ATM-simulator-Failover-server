@@ -37,3 +37,26 @@ document.querySelector('.cvv-input').onmouseleave = () => {
 document.querySelector('.cvv-input').oninput = () => {
     document.querySelector('.cvv-box').innerText = document.querySelector('.cvv-input').value;
 }
+
+
+const modal = document.getElementById('myModal');
+const btn = document.getElementById('logoutBtn');
+const span = document.getElementById('closeBtn');
+
+btn.onclick = () => {
+    modal.style.display = 'block';
+}
+
+function modal() {
+    modal.style.display = 'block';
+}
+
+span.onclick = () => {
+    modal.style.display = 'none';
+}
+
+window.onclick = () => {
+    if(e.target == modal) {
+        modal.style.display = 'none';
+    }
+}

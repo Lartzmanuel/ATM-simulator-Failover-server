@@ -3,8 +3,8 @@
     <div class="card-container">
         <div class="front">
             <div class="image">
-                <img src="/images/chip.png" width="" height="50" alt="">
-                <img src="/images/visa.png" width="" height="40" alt="">
+                <img src="/images/chip.png" height="50" alt="">
+                <img src="/images/visa.png" height="40" alt="">
             </div>
             <div class="card-number-box">
                 ###############
@@ -38,11 +38,11 @@
     <form action="">
         <div class="inputBox">
             <span class="label">card number</span>
-            <input type="text" maxlength="16" class="card-number-input">
+            <input type="text" name="cardnumberInput" id="cardnumberInput" oninput="this.value= this.value.replace(/[^0-9]/g, '').substring(0, 13);" maxlength="13" class="card-number-input" required>
         </div>
         <div class="inputBox">
             <span class="label">name</span>
-            <input type="text" class="card-holder-input">
+            <input type="text" name="nameInput" id="nameInput" class="card-holder-input" required>
         </div>
        
         <div class="flexbox">
