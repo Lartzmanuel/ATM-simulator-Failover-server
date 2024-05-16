@@ -63,6 +63,35 @@
     
     displayTime()
     addZero()
+
+
+    function displayModal(){
+        const myModal = document.getElementById('myModal');
+        const btn = document.getElementById('logoutBtn');
+
+        btn.onclick = () => {
+            myModal.style.display = 'block';
+        }
+        
+        window.onclick = (event) => {
+            if(event.target == myModal ) {
+                myModal.style.display = 'none';
+            }
+        }
+        
+    }
+
+    function Close() {
+        const myModal = document.getElementById('myModal');
+            myModal.style.display = 'none';
+    }
+
+    function Logout(){
+        window.location.href = '/pin'
+        const myModal = document.getElementById('myModal');
+         myModal.style.display = 'none';
+
+    }
  
     
     document.querySelector('.card-number-input').oninput = () => {
@@ -96,30 +125,5 @@
     }
     
     
-
-    function displayModal(){
-        const myModal = document.getElementById('myModal');
-        const btn = document.getElementById('logoutBtn');
-
-        btn.onclick = () => {
-            myModal.style.display = 'block';
-        }
-        
-        window.onclick = (event) => {
-            if(event.target == myModal ) {
-                myModal.style.display = 'none';
-            }
-        }
-        
-    }
-
-    function Close() {
-        const myModal = document.getElementById('myModal');
-            myModal.style.display = 'none';
-    }
-
-    function Logout(){
-        window.location.href = '../../views/pin'
-    }
 
     
