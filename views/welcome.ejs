@@ -1,11 +1,12 @@
 <div class="welcome-wrapper">
     <div class="user-details">
         <div class="welcome-container">
-            <div class="greet-user">
+            <div class="greet-user poppins-semibold">
                 Welcome User
             </div>
             <div class="date">
-            <p>5TH MAY, 2024 |<span class="time"> 04:20am</span></p>
+                <span id="date"></span>
+                <span id="time"></span>
             </div>
         </div>
     </div>
@@ -15,9 +16,6 @@
             <div class="options-set-1">
                 <div class="option-container">
                     <a class="link" href="/transfer">
-                        <div class="icon">
-
-                        </div>
                         <div class="option-text">
                             <div class="poppins-black" class="transaction">TRANSFER FUNDS</div>
                             <div class="trans-details">Transfer fund to another account</div>
@@ -27,9 +25,6 @@
                 
                 <div class="option-container">
                     <a class="link" href="/balance">
-                        <div class="icon">
-
-                        </div>
                         <div class="option-text">
                             <div class="poppins-black" class="poppins-black" class="transaction">BALANCE ENQUIRY</div>
                             <div class="trans-details">Check the balance of your account</div>
@@ -39,9 +34,6 @@
 
                 <div class="option-container">
                     <a class="link" href="/mini-statement">
-                        <div class="icon">
-
-                        </div>
                         <div class="option-text">
                             <div class="poppins-black" class="transaction">MINI STATEMENT</div>
                             <div class="trans-details">Get a mini statement of your account</div>
@@ -54,9 +46,6 @@
                 <div class="option-container">
                     <a class="
                     link" href="/withdrawal">
-                        <div class="icon">
-
-                        </div>
                         <div class="option-text">
                             <div class="poppins-black" class="transaction">WITHDRAWAL</div>
                             <div class="trans-details">Withdraw money from your account</div>
@@ -66,9 +55,6 @@
                 </div>
                 <div class="option-container">
                     <a class="link" href="/cash-deposit">
-                        <div class="icon">
-
-                        </div>
                         <div class="option-text">
                             <div class="poppins-black" class="transaction">CASH DEPOSIT</div>
                             <div class="trans-details">Deposit cash into your account here</div>
@@ -77,9 +63,7 @@
                 </div>
                 <div class="option-container">
                         <a class="link" href="change-pin">
-                            <div class="icon">
 
-                            </div>
                             <div class="option-text">
                                 <div class="poppins-black" class="transaction">CHANGE PIN</div>
                                 <div class="trans-details">Change your ATM/Debit card pin here</div>
@@ -90,12 +74,20 @@
         </div>
     </div>
     <div class="logout">
-        <button id="logoutBtn" class="btn" type="button">LOGOUT</button>
+        <button onclick="displayModal()" id="logoutBtn" class="btn" type="button">LOGOUT</button>
     </div>
 
     <div id="myModal" class="modal">
         <div class="modal-content">
-            <span id="closeBtn" onclick="modal()" class="close">&times;</span>
+            <div class="modal-header">
+                <p>Logout</p>
+                <span id="closeBtn" onclick="Close()" class="close">&times;</span>
+            </div>
+            <p class="logtext">Do you want to Logout?</p>
+            <div class="buttons">
+                <button onclick="Logout()" id="yesBtn" class="yes" type="button">Yes</button>
+                <button id="noBtn" onclick="Close()"  class="no" type="button">No</button>
+            </div>
         </div>
     </div>
     

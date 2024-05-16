@@ -74,6 +74,10 @@ body {
     text-align: center;
 }
 
+.greet-user {
+    font-size: 20px;
+}
+
 .pin-box {
     width: 90px;
     height: 90px;
@@ -93,22 +97,18 @@ body {
 
 .pin-button {
     width: 30%;
+    padding: 15px 0;
     border-radius: 20px;
+    border: none;
     transition: box-shadow ease 0.3s;
-}
-
-.pin-button:hover {
-    box-shadow: 0 0 8px rgba(0,0,0,0.3);
-}
-
-button {
-    border-radius: 10px;
-    padding: 10px 25px;
-    border: none;   
     background-image: linear-gradient(to right, #146fe6, rgb(212, 25, 203), rgb(179, 2, 179));
     color: white;
     font-weight: 600;
     letter-spacing: 1px;
+}
+
+.pin-button:hover, .btn:hover {
+    box-shadow: 0 0 8px rgba(0,0,0,0.3);
 }
 
 button:hover {
@@ -163,8 +163,14 @@ p.label {
 .btn {
     width: 100%;
     margin-top: 20px;
+    border-radius: 10px;
     padding: 15px 0;
     transition: box-shadow ease 0.3s;
+    border: none;   
+    background-image: linear-gradient(to right, #146fe6, rgb(212, 25, 203), rgb(179, 2, 179));
+    color: white;
+    font-weight: 600;
+    letter-spacing: 1px;
 }
 
 .btn:hover {
@@ -411,11 +417,37 @@ table {
     margin: 15% auto;
     padding: 20px;
     border: 1px solid #888;
-    width: 50%;
+    background-color: #fff;
+    border-radius: 10px;
+    width: 300px;
+}
+
+.close {
+    font-size: 20px;
 }
 
 .close:hover, .close:focus {
     color: black;
     text-decoration: none;
     cursor: pointer;
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logtext {
+    padding: 20px 0;
+}
+
+.yes {
+    padding: 8px 20px;
+    border-radius: 8px;
+    margin-right: 5px;
+}
+
+.no {
+    padding: 8px 20px;
+    border-radius: 8px;
 }
