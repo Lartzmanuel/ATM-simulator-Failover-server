@@ -73,21 +73,25 @@
             </div>
         </div>
     </div>
-    <div class="logout">
-        <button onclick="displayModal()" id="logoutBtn" class="btn" type="button">LOGOUT</button>
+
+    <div class="logout" id="logoutBtn">
+        <button class="btn" type="button">LOGOUT</button>
     </div>
 
-    <div id="myModal" class="modal">
+    <div class="modal" id="myModal">
         <div class="modal-content">
             <div class="modal-header">
                 <p>Logout</p>
-                <span id="closeBtn" onclick="Close()" class="close">&times;</span>
+                <span id="closeBtn" class="close">&times;</span>
             </div>
+
             <p class="logtext">Do you want to Logout?</p>
+
             <div class="buttons">
-                <button onclick="Logout()" id="yesBtn" class="yes" type="button">Yes</button>
-                <button id="noBtn" onclick="Close()"  class="no" type="button">No</button>
+                <button id="yesBtn" class="yes" type="button">Yes</button>
+                <button id="noBtn" class="no" type="button">No</button>
             </div>
+
         </div>
     </div>
     
