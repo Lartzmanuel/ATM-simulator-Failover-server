@@ -139,3 +139,16 @@ if (cvvInput && frontCard && backCard) {
         backCard.style.transform = 'perspective(1000px) rotateY(180deg)';
     };
 }
+
+
+document.addEventListener('DOMContentLoaded', function(){
+    const radioButtons = document.querySelectorAll('input[type="radio"]')
+
+radioButtons.forEach(button => {
+    button.addEventListener('change', () => {
+        if(button.checked){
+            console.log(button.value)
+        }
+        })
+    })
+})
